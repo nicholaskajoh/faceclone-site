@@ -1,6 +1,4 @@
 <?php require_once "functions.php"; ?>
-<?php include "header.php" ?>
-
 <?php
   db_connect();
   // if user is logged in, redirect to home page
@@ -8,6 +6,8 @@
     redirect_to("/home.php");
   }
 ?>
+
+<?php include "header.php" ?>
 
 <!-- main -->
 <main class="container">
